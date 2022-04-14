@@ -147,7 +147,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                     _todoList.add({
                                       "data": todo,
                                       "isChecked":false
-                                    });
+                                    }); 
+                                   _todoList= _todoList.reversed.toList();
                                     todo="";
                                     Navigator.pop(Context);
                                   });
